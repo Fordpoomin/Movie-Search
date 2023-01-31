@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Designed and Coded by Adam B. Jost in May, 2020 -->
+  <title>Test-Movie.com</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Original Style Sheet Link -->
+  <link rel="stylesheet" href="css/style.css">
+  <!-- Bootstrap   -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <!-- jQuery Src Link -->
+  <script src="js/jQuery.js"></script>
+
+  <style>
+    body {
+      background-image: url("img/bg.jpg");
+    }
+  </style>
+</head>
+
+<body>
+  <!-- MovieInfo.com Navigation Link -->
+  <nav class="navbar navbar-default">
+    <div class="container">
+      <div class="navbar-header">
+        <a class="navbar-brand" href="index.html">Test-Movie-OMBDAPI</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Movie Search Bar -->
+  <div class="container">
+    <div class="jumbotron search-bar">
+      <h3 class="text-center">Search For Any Movie</h3>
+      <form id="searchForm">
+        <input type="text" class="form-control" id="searchInput" placeholder="Search Movies...">
+      </form>
+    </div>
+  </div>
+  <!-- Movie Query Results -->
+  <div class="container">
+    <div id="movies" class="row"></div>
+  </div>
+
+  <!-- Paginations -->
+
+  <center>
+    <p id="number">1</p>
+    <button id="back" onclick="back()">Back</button>
+    <button id="next" onclick="next()">Next</button>
+  </center>
+
+  <!-- Script Src -->
+  <script src="js/script.js"></script>
+  <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+</body>
+
+</html>

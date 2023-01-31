@@ -1,0 +1,44 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap");
+* {
+  font-family: "Roboto Condensed", sans-serif;
+}
+.support {
+  position: absolute;
+  top: 0;
+  right: 10%;
+}
+#movies .col-md-3 img {
+  height: 240px;
+  width: 190px;
+  margin-top: 10px;
+}
+#movies .col-md-3 h5 {
+  margin: 10px 0 5px 0;
+  font-size: 13px;
+  height: 30px;
+}
+#movies,
+#movie img {
+  width: 100%;
+}
+.hide {
+  display: none;
+}
+.search-bar {
+  background: #1d4350;
+  background: -webkit-linear-gradient(to right, #a43931, #1d4350);
+  background: linear-gradient(to right, #a43931, #1d4350);
+}
+@media (min-width: 960px) {
+  #movies .col-md-3 .well {
+    height: 390px;
+  }
+  #movies .col-md-3 img {
+    height: 240px;
+  }
+}
+.movie-card {
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}

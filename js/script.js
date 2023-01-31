@@ -65,14 +65,14 @@ function previosPage() {
 }
 
 function getMovies(searchQuery) {
-  // axios.get('http://www.omdbapi.com?s='+searchQuery+'&page='+page+'&apikey=6149a617')
+  // axios.get('http://www.omdbapi.com?s='+searchQuery+'&page='+page+'&apikey=adb3d41e')
   window.sessionStorage.setItem("searchQuery", searchQuery);
   window.sessionStorage.setItem("page", page);
   axios
     .get(
       "http://www.omdbapi.com?s=" +
       searchQuery +
-      "&apikey=6149a617" +
+      "&apikey=adb3d41e" +
       "&page=" +
       page
     )
@@ -118,7 +118,7 @@ function getMovie() {
   // console.log(movieId)
 
   axios
-    .get("http://www.omdbapi.com?i=" + movieId + "&apikey=6149a617")
+    .get("http://www.omdbapi.com?i=" + movieId + "&apikey=adb3d41e")
     .then((response) => {
       // console.log(response);
       let movie = response.data;
@@ -126,7 +126,7 @@ function getMovie() {
       let output = `
         <div class="row">
           <div class="col-md-4">
-            <img src="${movie.Poster}" class="thumbnail">
+            <img src="${movie.Poster}" class="thumbnail" >
           </div>
           <div class="col-md-8">
             <h2>${movie.Title}</h2> 
